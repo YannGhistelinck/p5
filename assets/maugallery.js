@@ -163,7 +163,7 @@
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
-        if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
+        if ($(this).children("img").attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
         }
       });
@@ -179,7 +179,7 @@
         $(".item-column").each(function() {
           if (
             $(this)
-              .children("img")
+            .children("img")
               .data("gallery-tag") === activeTag
           ) {
             imagesCollection.push($(this).children("img"));
@@ -188,7 +188,6 @@
       }
       let index = 0,
         next = null;
-
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;

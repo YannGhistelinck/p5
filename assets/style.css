@@ -48,6 +48,7 @@ body {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+	width : 100%;
 }
 
 .picture.left::before {
@@ -83,7 +84,7 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
+	width: 80%;
 }
 #about-me p {
 	width: 80%;
@@ -96,6 +97,7 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	margin-bottom : -70px;
 }
 .gallery .nav {
 	justify-content: center;
@@ -255,7 +257,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3, #about-me p {
 		width: 100%;
 	}
 }
